@@ -70,7 +70,8 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build Project
-      run: mvn build
+      run: mvn package
+      
     - uses: actions/checkout@v4
       with:
         # Disabling shallow clones is recommended for improving the relevancy of reporting
